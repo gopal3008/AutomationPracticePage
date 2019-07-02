@@ -32,6 +32,7 @@ public class HomePageTest extends TestBase{
 	public void PageLogoTest(){
 		boolean flag=Homepage.PageLogoTest();
 		Assert.assertTrue(flag);
+		
 	}
 	
 	@Test(priority=2)
@@ -48,14 +49,6 @@ public class HomePageTest extends TestBase{
 	public void ContactsPageTest(){
 		ContactsPg = Homepage.ContactsPageBtn();
 	}
-	
-	
-	
-	
-	
-	
-	
-	
 	
 	
 	@AfterMethod
