@@ -1,61 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="358269" started-at="2019-06-28T19:51:19Z" finished-at="2019-06-28T19:57:17Z">
+  <suite name="Default suite" duration-ms="63977" started-at="2019-07-03T20:34:54Z" finished-at="2019-07-03T20:35:58Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="358269" started-at="2019-06-28T19:51:19Z" finished-at="2019-06-28T19:57:17Z">
-      <class name="com.qa.pages.TestCases.HomePageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.pages.TestCases.HomePageTest@5e5792a0]" name="setUp" is-config="true" duration-ms="173176" started-at="2019-06-29T01:21:19Z" finished-at="2019-06-29T01:24:12Z">
+    <test name="Default test" duration-ms="63977" started-at="2019-07-03T20:34:54Z" finished-at="2019-07-03T20:35:58Z">
+      <class name="com.qa.pages.TestCases.SignInPageTests">
+        <test-method status="PASS" signature="Setup()[pri:0, instance:com.qa.pages.TestCases.SignInPageTests@ae45eb6]" name="Setup" is-config="true" duration-ms="62595" started-at="2019-07-04T02:04:54Z" finished-at="2019-07-04T02:05:56Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="PageLogoTest()[pri:1, instance:com.qa.pages.TestCases.HomePageTest@5e5792a0]" name="PageLogoTest" duration-ms="445" started-at="2019-06-29T01:24:12Z" finished-at="2019-06-29T01:24:13Z">
+        </test-method> <!-- Setup -->
+        <test-method status="PASS" signature="verifyCallusNowTextTest()[pri:0, instance:com.qa.pages.TestCases.SignInPageTests@ae45eb6]" name="verifyCallusNowTextTest" duration-ms="199" started-at="2019-07-04T02:05:56Z" finished-at="2019-07-04T02:05:56Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- PageLogoTest -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.qa.pages.TestCases.HomePageTest@5e5792a0]" name="teardown" is-config="true" duration-ms="994" started-at="2019-06-29T01:24:13Z" finished-at="2019-06-29T01:24:14Z">
+        </test-method> <!-- verifyCallusNowTextTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.pages.TestCases.SignInPageTests@ae45eb6]" name="tearDown" is-config="true" duration-ms="1090" started-at="2019-07-04T02:05:56Z" finished-at="2019-07-04T02:05:58Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.pages.TestCases.HomePageTest@5e5792a0]" name="setUp" is-config="true" duration-ms="57904" started-at="2019-06-29T01:24:14Z" finished-at="2019-06-29T01:25:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="HomePageText()[pri:2, instance:com.qa.pages.TestCases.HomePageTest@5e5792a0]" name="HomePageText" duration-ms="31" started-at="2019-06-29T01:25:12Z" finished-at="2019-06-29T01:25:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- HomePageText -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.qa.pages.TestCases.HomePageTest@5e5792a0]" name="teardown" is-config="true" duration-ms="8199" started-at="2019-06-29T01:25:12Z" finished-at="2019-06-29T01:25:20Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.pages.TestCases.HomePageTest@5e5792a0]" name="setUp" is-config="true" duration-ms="58446" started-at="2019-06-29T01:25:20Z" finished-at="2019-06-29T01:26:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="SignInBtnTest()[pri:3, instance:com.qa.pages.TestCases.HomePageTest@5e5792a0]" name="SignInBtnTest" duration-ms="9" started-at="2019-06-29T01:26:18Z" finished-at="2019-06-29T01:26:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SignInBtnTest -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.qa.pages.TestCases.HomePageTest@5e5792a0]" name="teardown" is-config="true" duration-ms="1150" started-at="2019-06-29T01:26:18Z" finished-at="2019-06-29T01:26:20Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.pages.TestCases.HomePageTest@5e5792a0]" name="setUp" is-config="true" duration-ms="56520" started-at="2019-06-29T01:26:20Z" finished-at="2019-06-29T01:27:16Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="ContactsPageTest()[pri:4, instance:com.qa.pages.TestCases.HomePageTest@5e5792a0]" name="ContactsPageTest" duration-ms="8" started-at="2019-06-29T01:27:16Z" finished-at="2019-06-29T01:27:16Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ContactsPageTest -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.qa.pages.TestCases.HomePageTest@5e5792a0]" name="teardown" is-config="true" duration-ms="1260" started-at="2019-06-29T01:27:16Z" finished-at="2019-06-29T01:27:17Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- com.qa.pages.TestCases.HomePageTest -->
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.pages.TestCases.SignInPageTests -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

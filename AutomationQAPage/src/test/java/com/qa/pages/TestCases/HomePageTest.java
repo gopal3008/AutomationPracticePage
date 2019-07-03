@@ -49,6 +49,11 @@ public class HomePageTest extends TestBase{
 	public void ContactsPageTest(){
 		ContactsPg = Homepage.ContactsPageBtn();
 	}
+	@Test
+	public void verifyEveningDresslinkVisibleTest(){
+		boolean LinkVisible = Homepage.EveningDressLinkVisible();
+		Assert.assertEquals(LinkVisible, true);
+	}
 	
 	
 	@AfterMethod
