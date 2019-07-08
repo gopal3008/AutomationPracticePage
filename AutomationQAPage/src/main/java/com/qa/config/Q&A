@@ -1,0 +1,9 @@
+1. How to give input from config.properties in your testcase. why prop is not passing through inputs
+		want to do like below
+		public void verifyEveningDresslinkVisibleTest(prop.getproperties){
+		
+2. why the below doesn't work
+		driver.findElement(By.xpath("//div[@id='block_top_menu']"
+					+ "//ul[contains(@class,'sf-menu')]/li[2]/a[text()='Dresses']"
+					+ "//following-sibling::ul/li[2]")).getAttribute("title")
+3. Can we use depends on method in another test class

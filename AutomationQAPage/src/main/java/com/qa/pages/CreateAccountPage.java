@@ -4,4 +4,25 @@ import com.qa.Base.TestBase;
 
 public class CreateAccountPage extends TestBase{
 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }

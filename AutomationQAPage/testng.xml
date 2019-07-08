@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite" parallel = "tests" thread-count="5">
+<suite name="Suite" parallel = "methods" thread-count="2">
   <test name="Test">
+  	<parameter name = "sa" value = "Evening Dresses"/>
     <classes>
       <class name="com.qa.pages.TestCases.HomePageTest"/>
       <class name="com.qa.pages.TestCases.SignInPageTests"/>

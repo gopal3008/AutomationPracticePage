@@ -1,5 +1,7 @@
 package com.qa.pages;
 
+//import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -7,11 +9,12 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.qa.Base.TestBase;
+import com.qa.Utility.TestUtil;
 
 public class SignInPage extends TestBase{
 
 	
-//	HomePage Homepage;
+	HomePage Homepage;
 //	SignInPage SigninPage;
 //	MyAccountPage myAccount;
 	
@@ -50,11 +53,13 @@ public MyAccountPage Signin(String un,String pwd){
 	return new MyAccountPage();
 }
 
-public CreateAccountPage createAct(String CA){
+public String createAct(String CA){
 	CreateEmail.clear();
 	CreateEmail.sendKeys(CA);
 	SubmitBtn.click();
-	return new CreateAccountPage();
+	String CreateAnAccount = driver.findElement(By.xpath("//h1[@class='page-heading']")).getText();
+//	return new CreateAccountPage();
+	return CreateAnAccount;
 }
 
 public String VerifyCallusNowtext(){
@@ -62,9 +67,16 @@ public String VerifyCallusNowtext(){
 	return CallusText;
 }
 
-public HomePage HomeIconTest(){
-	driver.findElement(By.xpath("//a[@class='home']")).click();
-	return new HomePage();
+public String HomeIconTest(){
+	driver.findElement(By.xpath("//a[@title='Return to Home']")).click();
+//	driver.findElement(By.xpath("//a[@class = 'home']")).click();
+	System.out.println("Check element");
+	String HomepageURL = driver.getCurrentUrl();
+	return HomepageURL;
+//	driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
+//	driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
+//	System.out.println("Check element");
+//	return new HomePage();
 }
 
 	
