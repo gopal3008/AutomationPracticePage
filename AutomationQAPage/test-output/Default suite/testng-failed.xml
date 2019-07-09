@@ -3,14 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.qa.pages.TestCases.HomePageTest">
+      <class name="com.qa.pages.TestCases.SignInPageTests">
         <methods>
-          <include name="verifyEveningDresslinkVisibleTest"/>
-          <include name="setUp"/>
-          <include name="teardown"/>
-          <include name="SignInBtnTest"/>
+          <include name="Setup"/>
+          <include name="tearDown"/>
+          <include name="CreateActlinkTest"/>
         </methods>
-      </class> <!-- com.qa.pages.TestCases.HomePageTest -->
+      </class> <!-- com.qa.pages.TestCases.SignInPageTests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

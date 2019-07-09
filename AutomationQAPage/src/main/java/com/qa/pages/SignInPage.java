@@ -17,6 +17,8 @@ public class SignInPage extends TestBase{
 	HomePage Homepage;
 //	SignInPage SigninPage;
 //	MyAccountPage myAccount;
+	TestUtil ReadExcelData= new TestUtil(System.getProperty("user.dir")+"/src/main/java/com/qa/"
+			+ "testdata/SignUpTestData.xlsx");
 	
 //public SignInPage() {
 //	// TODO Auto-generated constructor stub
@@ -53,9 +55,9 @@ public MyAccountPage Signin(String un,String pwd){
 	return new MyAccountPage();
 }
 
-public String createAct(String CA){
+public String createAct(){
 	CreateEmail.clear();
-	CreateEmail.sendKeys(CA);
+	CreateEmail.sendKeys(ReadExcelData.getCellData(1, 1, 0));
 	SubmitBtn.click();
 	String CreateAnAccount = driver.findElement(By.xpath("//h1[@class='page-heading']")).getText();
 //	return new CreateAccountPage();

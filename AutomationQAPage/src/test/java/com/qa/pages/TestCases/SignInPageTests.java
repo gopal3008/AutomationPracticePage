@@ -9,6 +9,7 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.qa.Base.TestBase;
+import com.qa.Utility.TestUtil;
 //import com.qa.pages.CreateAccountPage;
 import com.qa.pages.HomePage;
 import com.qa.pages.MyAccountPage;
@@ -32,6 +33,8 @@ public class SignInPageTests extends TestBase{
 		Homepage = new HomePage();
 		SignInpage = Homepage.SignInBtn();
 		System.out.println("Inside SignInPage");
+		TestUtil ReadExcelData= new TestUtil(System.getProperty("user.dir")+"/src/main/java/com/qa/"
+				+ "testdata/SignUpTestData.xlsx");
 		
 			}
 	@Test(enabled=true,groups="SignInPage",invocationCount= 2)
@@ -53,8 +56,8 @@ public class SignInPageTests extends TestBase{
 	}
 	
 	@Test
-	public void CreateActlinkTest(String NewEmail){
-		String CreateAnAccount = SignInpage.createAct("gopal.1740@gmail.com");
+	public void CreateActlinkTest(){
+		String CreateAnAccount = SignInpage.createAct();
 		Assert.assertEquals(CreateAnAccount, "CREATE AN ACCOUNT");
 	}
 	
